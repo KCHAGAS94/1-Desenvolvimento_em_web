@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Idade das Pessoas</title>
+</head>
+<body>
+    
+
+    <!-- <script>
+
+    let idade = prompt('Qual sua idade?')
+   
+    if(idade >= 0 && idade < 15){
+        document.write('Criança')
+    } else if(idade >=15 && idade < 30){
+        document.write('Jovem')
+    } else if(idade >= 30 && idade < 60){
+        document.write('Adulto')
+    } else if(idade >= 60){
+        document.write('Idoso')
+    }
+        
+    </script> -->
+
+    <h1>Classificação de Idade</h1>
+    <label for="idade">Informe a idade:</label>
+    <input type="number" id="idade" placeholder="Digite a idade">
+    <button onclick="classificarIdade()">Classificar</button>
+
+    <div class="resultado" id="resultado">Aguardando idade...</div>
+
+    <script>
+        function classificarIdade() {
+            // Obtém a idade do usuário
+            let idade = parseInt(document.getElementById('idade').value);
+            let mensagem;
+
+            // Verifica a idade e define a mensagem correspondente
+            if (idade >= 0 && idade < 15) {
+                mensagem = "Criança";
+            } else if (idade >= 15 && idade < 30) {
+                mensagem = "Jovem";
+            } else if (idade >= 30 && idade < 60) {
+                mensagem = "Adulto";
+            } else if (idade >= 60) {
+                mensagem = "Idoso";
+            } else {
+                mensagem = "Idade inválida! Por favor, insira um número maior ou igual a 0.";
+            }
+
+            // Exibe a mensagem no elemento de resultado
+            document.getElementById('resultado').innerText = mensagem;
+        }
+    </script>
+
+    
+</body>
+</html>
