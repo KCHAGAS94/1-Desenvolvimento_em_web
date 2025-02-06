@@ -6,22 +6,23 @@
     <title>JavaScript</title>
     <script>
 
-        function exibirArtigo(id, callbackSucesso, callbackErro) {
-            //lógica: recuperar o id via requisição http
-            if (true) {
-                callbackSucesso('Funções de callback em JS','Funcções de callback são muito utilizadas.....')
-
-            } else 
+        function exibirArtigo (id, callbackSucesso, callbackErro){
+        //lógica: recuperar o id via requisição http
+        if(true){
+            callbackSucesso('Funções de callback em JS', 'funções de callback são muito utilizadas...')
+        } else{
             callbackErro('Erro ao recuperar os dados')
         }
-    
+    }
 
-        var callbackSucesso = function(){
-
+        var callbackSucesso = function(titulo, descrição){
+            document.write('<h1>' + titulo + '</h1>')
+            document.write('<hr />')
+            document.write('<h1>' + titulo + '</h1>')
         }
-
-        var callbackErro = function (){
-
+        
+        var callbackErro = function(erro){
+            document.write('<p><b>Erro:</b>' + erro + '</p>')
         }
 
         exibirArtigo(1, callbackSucesso, callbackErro)
