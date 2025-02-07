@@ -8,11 +8,44 @@
         //getDate => mostra a data do dia
         //getMonth => mostra o mês (a concatenação é para adicionar mais 1)
         //getFullYear => mostra o ano momento.
-        var data = new Date()
-        document.write(data.getDate() + '/' + (data.getMonth() + 1)+ '/' + (data.getFullYear()))
+        // var data = new Date()
+        // document.write(data.getDate() + '/' + (data.getMonth() + 1)+ '/' + (data.getFullYear()))
         
+        // 02 / 02 / 2025
 
-        // 22 / 11 / 2017
+
+        // var data = new Date()
+
+        //adicionar / remover dias
+        // document.write(data.toString())
+        // data.setDate(data.getDate() - 1)
+        // document.write('<hr />')
+        // document.write(data.toString())
+
+        //adicionar / remover dias
+        // document.write(data.toString())
+        // data.setMonth(data.getMonth() - 1)
+        // document.write('<hr />')
+        // document.write(data.toString())
+        // document.write('<hr />')
+
+
+        //adicionar / remover dias
+        // document.write(data.toString())
+        // data.setFullYear(data.getFullYear() - 1)
+        // document.write('<hr />')
+        // document.write(data.toString())
+
+
+        //15 / 01 / 2017 e 23 / 02/ 2017
+
+        var data1 = new Date(2017, 0, 15)
+        var data2 = new Date(2017, 1, 23)
+
+        document.write(data1.toString())
+        document.write('<hr />')
+        document.write(data2.toString())
+
     </script>
 </head>
 <body>
