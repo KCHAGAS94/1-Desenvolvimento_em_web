@@ -4,8 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript</title>
+    <script>
+
+        function acao1(){
+            alert('Elemento clicado')
+        }
+
+        function acao2(){
+            alert('O cursor do alert, deixou a região do elemento')
+        }
+
+
+    </script>
 </head>
 <body>
-    
+    <!-- Um click, ocorre o alerta -->
+    <!-- <div onclick="acao()" style="background: #ccc;; height: 150px; width: 150px"></div> -->
+
+     <!-- Dois clicks, ocorrem o alerta -->
+    <!-- <div ondblclick="acao()" style="background: #ccc;; height: 150px; width: 150px"></div> -->
+
+    <!-- Clicar e segurar, e quando soltar ele aparece o alerta -->
+    <!-- <div onmouseup="acao()" style="background: #ccc;; height: 150px; width: 150px"></div> -->
+
+    <!-- Quando o mouse sobrepoem a areae ocupada pela ação no html -->
+    <!-- <div onmouseover="acao()" style="background: #ccc;; height: 150px; width: 150px"></div> -->
+
+    <!-- Quando o mouse saida a area ocupada pela ação do html -->
+    <div onclick="acao1()" onmouseout="acao2()" style="background: #ccc;; height: 150px; width: 150px"></div>
 </body>
 </html>
