@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="input">
+    <button id="botão">Enviar</button>
+    <p id="valor"></p>
+
+    <script>
+    let input = document.getElementById('input')
+    let botão = document.getElementById('botão')
+    let resultado = document.getElementById('valor')
+
+    botão.addEventListener('click', function(){
+        let textoDigitado = input.value
+        resultado.innerHTML = "Você digitou: " + input.value
+        input.value = ''
+               
+     }
+    )
+        
+    </script>
+    
+</body>
+</html>

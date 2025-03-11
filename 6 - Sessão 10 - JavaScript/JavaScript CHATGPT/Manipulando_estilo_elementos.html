@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando estilo de elementos</title>
+</head>
+<body>
+    <p id="meuTexto">Olá, Mundo!</p>
+    <button id="botao">Clique aqui e veja a mágica!</button>
+
+
+    <script>
+        let meuTexto = document.getElementById('meuTexto');
+        let botao = document.getElementById('botao');
+
+        botao.addEventListener("click", function() {
+        meuTexto.style.fontFamily = "Arial";
+        meuTexto.style.fontWeight = "bold";
+        meuTexto.style.width = "200px";
+    })
+        
+
+
+    
+    </script>
+</body>
+</html>
