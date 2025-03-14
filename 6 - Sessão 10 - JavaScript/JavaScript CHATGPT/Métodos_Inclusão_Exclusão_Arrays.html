@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métodos de Inclusão e Exclusão em Arrays</title>
+</head>
+<body>
+
+    <script>
+        let brinquedos = ["Carrinho", "Boneca", "Bola"]; 
+        brinquedos.push("Dinossauro"); // Adiciona no final
+        console.log(brinquedos); 
+
+        brinquedos.unshift("Robô"); // Adiciona no começo
+        console.log(brinquedos);
+
+        brinquedos.pop(); // Remove o último item
+        console.log(brinquedos);
+
+        brinquedos.shift(); // Remove o primeiro item
+        console.log(brinquedos);
+
+        brinquedos.splice(1, 1); // Remove um item a partir de uma posição
+        console.log(brinquedos);
+
+        brinquedos.splice(1, 1, "Avião"); // Remove "Bola" e adiciona "Avião"
+        console.log(brinquedos);
+
+        //Teste - Adicionar 3 itens no final.
+        brinquedos.push("Dinossauro", "Bola", "peão");
+        console.log(brinquedos);
+
+        //Teste - Adicionar 2 no começo.
+        brinquedos.unshift("Robô", "Cubo Mágico");
+        console.log(brinquedos);
+
+        //Teste - Remover 1 do final e 1 do começo.
+        brinquedos.pop();
+        brinquedos.shift();
+        console.log(brinquedos);
+
+        // Teste - Remover um do meio e colocar outro no lugar.
+        brinquedos.splice(2, 1, "Bola de Futebol");
+        console.log(brinquedos);
+
+    
+    </script>
+    
+</body>
+</html>
