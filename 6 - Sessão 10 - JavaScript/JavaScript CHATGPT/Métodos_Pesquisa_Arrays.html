@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métodos de Pesquisa em Arrays</title>
+</head>
+<body>
+
+    <script> 
+        let brinquedos = ["Carrinho", "Boneca", "Bola", "Dinossauro"];
+        console.log(brinquedos.includes("Bola")); // Retorna true
+        console.log(brinquedos.includes("Robô")); // Retorna false
+
+        let posicao = brinquedos.indexOf("Boneca"); // Retorna 1
+        console.log(posicao);
+
+        let numeros = [10, 25, 30, 50];
+        let maiorQue20 = numeros.find(num => num > 20);
+        console.log(maiorQue20); // 25 (o primeiro número maior que 20)
+
+        let posicaoMaiorQue20 = numeros.findIndex(num => num > 20);
+        console.log(posicaoMaiorQue20); // 1 (posição do primeiro número maior que 20)
+
+        // Foi comentado, devido ao teste realizado em baixo.
+        // let maioresQue20 = numeros.filter(num => num > 20);
+        // console.log(maioresQue20); // [25, 30, 50] ✅ (todos os números maiores que 20)
+
+        // Teste Verificar se um item existe.
+        console.log(brinquedos.includes("Bola")); // Retorna true
+
+        // Teste Descobrir a posição de um item.
+        console.log(brinquedos.indexOf("Boneca")); // Retorna 1
+
+        // Teste Achar o primeiro item que atenda a uma regra.
+        let menorQue20 = numeros.filter(num => num < 20);
+        console.log(menorQue20); // 25
+
+        // Teste Criar um novo array apenas com os itens que seguem uma regra.
+        let maioresQue20 = numeros.filter(num => num > 20);
+        console.log(maioresQue20); // [25, 30, 50]
+
+        
+    </script>
+    
+</body>
+</html>
