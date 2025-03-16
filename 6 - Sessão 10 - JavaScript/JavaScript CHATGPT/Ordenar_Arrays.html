@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordenar Arrays</title>
+</head>
+<body>
+
+    <script>
+        // Colocando os brinquedos em ordem alfabética
+        let brinquedos = ["Carrinho", "Boneca", "Bola", "Dinossauro"];
+        brinquedos.sort();
+        console.log(brinquedos); // ["Bola", "Boneca", "Carrinho", "Dinossauro"]
+
+        // Colocando os brinquedos em ordem crescente
+        let numeros = [51, 40, 30, 50];
+        numeros.sort();
+        console.log(numeros); // [30, 40, 50, 51]
+
+        // Colocando os números em ordem decrescente
+        numeros.sort((a, b) => b - a);
+        console.log(numeros); // [51, 50, 40, 30]
+
+        // Invertendo a ordem dos brinquedos
+        brinquedos.reverse();
+        console.log(brinquedos); // ["Dinossauro", "Carrinho", "Boneca", "Bola"]
+
+        //Ordenar palavras em ordem alfabética.
+        let palavras = ["Casa", "Bola", "Amor", "Dinheiro"];
+        palavras.sort();
+        console.log(palavras); // ["Amor", "Bola", "Casa", "Dinheiro"]
+
+        //Ordenar números do menor para o maior.
+        let numeros2 = [11, 100, 70, 50];
+        numeros2.sort((a, b) => a - b);
+        console.log(numeros2); // [11, 50, 70, 100]
+
+        //Ordenar números do maior para o menor.
+        numeros2.sort((a, b) => b - a);
+        console.log(numeros2); // [100, 70, 50, 11]
+
+        //Inverter a ordem dos elementos.
+        palavras.reverse();
+        console.log(palavras); // ["Dinheiro", "Casa", "Bola", "Amor"]
+
+
+    </script>
+    
+</body>
+</html>
